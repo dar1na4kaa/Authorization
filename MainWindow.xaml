@@ -11,9 +11,9 @@
             <Setter Property="Height" Value="30"></Setter>
             <Setter Property="Width" Value="300"></Setter>
             <Setter Property="Foreground" Value="Gray"></Setter>
-            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
             <Setter Property="Background" Value="White"></Setter>
-            <Setter Property="BorderThickness" Value="3"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
         </Style>
         <Style TargetType="TextBlock" x:Key="textBlockStyle">
@@ -46,9 +46,9 @@
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
         </Style>
     </Window.Resources>
-    <Grid Background="DarkSlateBlue">
-        <TabControl  Background="DarkSlateBlue">
-            <TabItem Header="Вход" IsSelected="True" FontSize="25">
+    <Grid >
+        <TabControl Background="DarkSlateBlue">
+            <TabItem Header="Вход" IsSelected="True" x:Name="enterTab" Height="35" FontSize="20" Width="240" Background="White" Foreground="DarkBlue" HorizontalAlignment="Left">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"></RowDefinition>
@@ -62,7 +62,7 @@
                     <Button Grid.Row="3" Style="{StaticResource buttonStyle}" Click="LogIn_Click">Войти</Button>
                 </Grid>
             </TabItem>
-            <TabItem Header="Регистрация" FontSize="25">
+            <TabItem Header="Регистрация" FontSize="20" Width="240" Height="35" Background="White" Foreground="DarkBlue" HorizontalAlignment="Right">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="2*"></RowDefinition>

@@ -111,6 +111,12 @@ namespace Authorization
             if (email != null && name != null && gender != null && pass != null)
             {
                 users.Add(new User(email, pass, name, gender));
+                enterTab.IsSelected = true;
+                nameRegBox.Text = "";
+                emailRegBox.Text = "";
+                passRegBox.Text = "";
+                retryPassRegBox.Text = "";
+
             }
         }
 
